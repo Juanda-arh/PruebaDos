@@ -4,6 +4,17 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+### Frontend / Angular ###
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+frontend/.cache/
+frontend/coverage/
+frontend/ng-serve*.log
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
 ### STS ###
 .apt_generated
 .classpath
