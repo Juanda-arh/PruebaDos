@@ -8,7 +8,7 @@ import { AuthService } from '../core/services/auth.service';
   standalone: true,
   imports: [RouterLink, NgIf, CurrencyPipe],
   template: `
-    <nav class="border-b border-slate-200 bg-white">
+    <nav *ngIf="cliente()" class="border-b border-slate-200 bg-white">
       <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
         <a routerLink="/fondos" class="text-lg font-semibold text-slate-950">BTG Fondos</a>
         <div class="flex items-center gap-4 text-sm" *ngIf="cliente() as current">

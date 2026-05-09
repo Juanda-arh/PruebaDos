@@ -8,5 +8,6 @@ export const authGuard: CanActivateFn = () => {
   if (auth.token) {
     return true;
   }
+  auth.logout();
   return router.createUrlTree(['/login']);
 };

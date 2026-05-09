@@ -4,19 +4,6 @@ spring:
   data:
     mongodb:
       uri: ${MONGO_URI:mongodb://localhost:27017/btg_funds}
-  mail:
-    host: ${SMTP_HOST:smtp.gmail.com}
-    port: ${SMTP_PORT:587}
-    username: ${SMTP_USERNAME:}
-    password: ${SMTP_PASSWORD:}
-    properties:
-      mail:
-        smtp:
-          auth: true
-          starttls:
-            enable: true
-    # Para Gmail usa una app password en SMTP_PASSWORD.
-    # Para Mailtrap reemplaza SMTP_HOST, SMTP_PORT, SMTP_USERNAME y SMTP_PASSWORD.
 
 app:
   jwt:
